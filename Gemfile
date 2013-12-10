@@ -33,7 +33,7 @@ gem "bootstrap-sass", "~> 3.0.3.0"
 gem 'devise', '~> 3.1.1'
 
 group :development, :test do
-     gem 'sqlite3'
+     gem "sqlite3-ruby", :require => "sqlite3"
 end
 
 group :production do
