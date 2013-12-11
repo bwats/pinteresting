@@ -32,14 +32,14 @@ gem "bootstrap-sass", "~> 3.0.3.0"
 
 gem 'devise', '~> 3.1.1'
 
-group :development, :test do
-     gem 'sqlite3'
-end
+gem 'sqlite3', :group => [:development, :test]
 
 group :production do
-     gem 'pg'
-     gem 'rails_12factor'
+  gem 'thin'
+  gem 'pg'
+  gem 'rails_12factor'
 end
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
